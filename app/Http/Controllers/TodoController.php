@@ -48,7 +48,7 @@ class TodoController extends Controller
     */
     public function __construct(Todo $instanceClass)
     {
-        $this->middleware('auth')->except('index');
+        $this->middleware('auth');
         $this->todo = $instanceClass;
     }
     
