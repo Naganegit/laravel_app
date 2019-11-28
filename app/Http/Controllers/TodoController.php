@@ -83,7 +83,7 @@ class TodoController extends Controller
     {
         $todos = $this->todo->getByUserId(Auth::id());
         $user = Auth::user();
-        return view('todo.index', compact('todos'), compact('user'));
+        return view('todo.index', compact('todos','user'));
     }
     
 
